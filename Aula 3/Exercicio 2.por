@@ -3,22 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		escreva(" Escreva as notas dos alunos" + "\n" )
+		escreva("Digite os números para uma divisão, para sabermos se o número é impar ou par" + "\n")
+		inteiro num1
+		leia(num1)
 		
-		inteiro nota1, nota2, nota3, nota4
-		leia(nota1, nota2, nota3, nota4)
+		inteiro restoDivisao = num1 % 2
+		escreva(restoDivisao)
 
-		inteiro media = (nota1 + nota2 + nota3 + nota4) /4
-		escreva( "A média final do aluno é: " + media)
-		
-		se( media >= 5){
-			escreva("\nO aluno passou de ano!")	
+		se( restoDivisao == 1){
+			escreva("\nO número é impar")
 		}senao{
-			escreva("\nO aluno repetiu")
+			escreva("\nO número é par")
 		}
 		
-			
-
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 297; 
+ * @POSICAO-CURSOR = 308; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

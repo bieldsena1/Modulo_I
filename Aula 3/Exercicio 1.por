@@ -12,11 +12,12 @@ programa
 		cadeia senha
 		leia(senha)
 
-		se( usuario == "admin" e senha == "123")
-		escreva( "Usuario foi conectado com sucesso :)")
-
-		senao
-		escreva("Falha ao conectar :(")
+		se( usuario == "admin" e senha == "123"){
+			escreva( "Usuario foi conectado com sucesso :)")	
+		}senao{
+			escreva("Falha ao conectar :(")	
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 316; 
+ * @POSICAO-CURSOR = 335; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
