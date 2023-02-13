@@ -6,13 +6,10 @@ programa
 	
 		escreva( " Qual sua idade ? ")
 	
-		inteiro escrevaidade
-		leia(escrevaidade)
+		inteiro idade
+		leia(idade)
 
-		logico maiordeidade = escrevaidade >= 18
-		logico menordeidade = escrevaidade <= 17
-
-		se( maiordeidade == verdadeiro e menordeidade == falso)
+		se( idade >= 18)
 		escreva(" O usuário é maior de idade")
 
 		senao
@@ -29,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 305; 
+ * @POSICAO-CURSOR = 110; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

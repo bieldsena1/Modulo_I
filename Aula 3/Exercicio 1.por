@@ -3,23 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		escreva( " Qual seu login de usuario?" + " ")
+		escreva(" Escreva as notas dos alunos" + "\n" )
 		
-		cadeia usuario
-		leia(usuario)
+		inteiro nota1, nota2, nota3, nota4
+		leia(nota1, nota2, nota3, nota4)
 
-		escreva( " Qual sua senha de login? " + " ")
-		inteiro senha
-		leia(senha)
+		inteiro media = (nota1 + nota2 + nota3 + nota4) /4
+		
 
-		logico usuario1 = usuario == "admin"
-		logico senha1 = senha == 123
-
-		se( usuario1 == verdadeiro e senha1 == verdadeiro)
-		escreva( " Login efetuado com sucesso!")
+		se( media >= 5)
 	
+		escreva( " O aluno passou de ano! ")
 		senao
-		escreva( " Falha no login...")
+		
+		escreva( " O aluno reprovou de ano :( ")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 409; 
+ * @POSICAO-CURSOR = 176; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
