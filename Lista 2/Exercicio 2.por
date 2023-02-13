@@ -8,19 +8,16 @@ programa
 		inteiro nota1, nota2, nota3, nota4
 		leia(nota1, nota2, nota3, nota4)
 
-		logico aprovado = (nota1 + nota2 + nota3 + nota4) /4 >= 5 
-
-		logico reprovado = (nota1 + nota2 + nota3 + nota4) /4 <= 4 
-
-		se(aprovado == verdadeiro e reprovado == falso)
-	{
-		escreva( " O aluno passou de ano! ")
-		}senao
-		{
-		escreva( " O aluno reprovou de ano :( ")
+		inteiro media = (nota1 + nota2 + nota3 + nota4) /4
+		escreva( "A média final do aluno é: " + media)
 		
-		}
-	
+		se( media >= 5)
+		escreva("\n" + "O aluno passou de ano!")
+
+		senao
+		escreva("\n" + "O aluno repetiu")
+			
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -28,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 341; 
+ * @POSICAO-CURSOR = 266; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
