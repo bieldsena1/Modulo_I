@@ -4,11 +4,11 @@ programa
 	funcao inicio()
 	{
 		
-		escreva( "Digite seu usuario" + "\n")
+		escreva( "Digite seu usuario\n")
 		cadeia usuario
 		leia(usuario)
 
-		escreva("Digite sua senha" + "\n")
+		escreva("Digite sua senha\n")
 		cadeia senha
 		leia(senha)
 
@@ -25,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 335; 
+ * @POSICAO-CURSOR = 213; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
