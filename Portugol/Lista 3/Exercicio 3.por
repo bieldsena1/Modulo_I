@@ -29,35 +29,35 @@ Percentual de pessoas com salário até 1000,00: 100%
 		real salario
 		inteiro filhos
 		inteiro contador = 0
-		real mediasalario = 0.0
-		inteiro mediafilhos = 0
-		real maiorsalario = -10000.0
+		real mediaSalario = 0.0
+		inteiro mediaFilhos = 0
+		real maiorSalario = -10000.0
 		real porcentual = 0.0
-		real porcentual2 = 0.0	
+		real porcentagem = 0.0	
 		
 		enquanto(contador < pessoas){
 			escreva("Qual o seu salário? ")
 			leia(salario)
-			mediasalario += salario				
+			mediaSalario += salario				
 			escreva("Quantos filhos você tem? ")
 			leia(filhos)
-			mediafilhos += filhos 
+			mediaFilhos += filhos 
 			contador++
-			se(salario > maiorsalario){
-				maiorsalario = salario
+			se(salario > maiorSalario){
+				maiorSalario = salario
 					
 				}
 			se(salario <= 1000){
 				porcentual++
 			}
 		}
-		porcentual2 = (porcentual / pessoas) * 100
-		mediafilhos /= pessoas
-		mediasalario /= pessoas			
-		escreva("Esse é o maior salario " + maiorsalario + "\n")
-		escreva("Essa é a média dos filhos " + mediafilhos + "\n")
-		escreva("Essa é a média do salário " + mediasalario + "\n")
-		escreva("Essa é a porcentagem das pessoas com salário de até R$1000 " + porcentual2 + "%\n")
+		porcentagem = (porcentual / pessoas) * 100
+		mediaFilhos /= pessoas
+		mediaSalario /= pessoas			
+		escreva("Esse é o maior salario " + maiorSalario + "\n")
+		escreva("Essa é a média dos filhos " + mediaFilhos + "\n")
+		escreva("Essa é a média do salário " + mediaSalario + "\n")
+		escreva("Essa é a porcentagem das pessoas com salário de até R$1000 " + porcentagem + "%\n")
 			
 	}
 }
@@ -66,7 +66,7 @@ Percentual de pessoas com salário até 1000,00: 100%
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1590; 
+ * @POSICAO-CURSOR = 1563; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
