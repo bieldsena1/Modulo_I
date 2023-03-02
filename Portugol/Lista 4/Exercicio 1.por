@@ -19,37 +19,31 @@ programa
 	{
 		cadeia usuario
 		cadeia senha
-		inteiro contador = 0
-		escreva("Digite seu nome de usuario: ")
-		leia(usuario)
-		escreva("Digite sua senha: ")
-		leia(senha)			
-		enquanto(contador < 4){
+		inteiro contadorTentativas = 	0
+		faca{
+			escreva("Digite seu nome de usuario: ")
+			leia(usuario)
+			escreva("Digite sua senha: ")
+			leia(senha)
 			se(usuario == "admin" e senha == "123"){
-				escreva("Conectado com sucesso")
+				escreva("Login realizado com sucesso")
 				pare
-			}senao{
-				escreva("Digite seu nome de usuario ")
-				leia(usuario)
-				escreva("Digite sua senha ")
-				leia(senha)
-				escreva("Sua conta foi bloqueada")
-				contador++
-				pare
-				
 			}
-			
-			
-		}
-		
+			contadorTentativas++
+			se(contadorTentativas == 3){
+				escreva("Sua conta foi bloqueada\n")					
+			}
+		}enquanto(contadorTentativas < 3)
+		escreva(contadorTentativas)					
 	}
+	
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1254; 
+ * @POSICAO-CURSOR = 830; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
