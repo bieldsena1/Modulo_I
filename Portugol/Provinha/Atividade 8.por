@@ -7,6 +7,7 @@ o somatório de todos os números ímpares entre 0 e 6 é igual à 9, pois 1+3+5
 	Saída esperada:
 64
 */
+	biblioteca 
 programa
 {
 	
@@ -32,9 +33,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 571; 
+ * @POSICAO-CURSOR = 389; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {somatorio, 18, 10, 9}-{contador, 20, 15, 8};
+ * @SIMBOLOS-INSPECIONADOS = {somatorio, 19, 10, 9}-{contador, 21, 15, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, funcao;
  */
