@@ -1,0 +1,41 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		const inteiro quantidadeLinhas = 3
+		const inteiro quantidadeColunas = 3
+		
+
+		inteiro matriz[quantidadeLinhas][quantidadeColunas]
+			para(inteiro linha = 0; linha < quantidadeLinhas; linha++){	
+				para(inteiro coluna = 0; coluna < quantidadeColunas; coluna++){
+					escreva("digite o numero que queira entrar e multiplicar na matriz :")
+					leia(matriz[linha][coluna])
+					se(coluna % 2 == 0){
+						matriz[linha][coluna] *= 2
+					}senao se(coluna % 2 == 1){
+						matriz[linha][coluna] *= 3
+					}
+			}
+		}
+		para(inteiro linha = 0; linha < quantidadeLinhas; linha++){	
+			para(inteiro coluna = 0; coluna < quantidadeColunas; coluna++){
+				escreva("|" + matriz[linha][coluna] + "|")
+			}
+			escreva("\n")
+		}
+		
+	}
+}
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 746; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = {matriz, 10, 10, 6};
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
