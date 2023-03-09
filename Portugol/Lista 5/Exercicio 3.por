@@ -18,12 +18,14 @@ programa
 				leia(matriz[i][j])								
 			}											
 		}		
-		escreva("1 - Imprimir todos os elementos da matriz.\n",
-		"2 - Somar todos os elementos e exibir o resultado.\n ",
-		"3 - Somar todos os elementos da terceira linha e exibir o resultado.\n",
-		"4 - Somar os elementos na diagonal principal.\n",
-		"5 Somar todos os elementos de índice par da segunda linha.\n",
-		"Digite sua escolha\n")
+		escreva(
+			"1 - Imprimir todos os elementos da matriz.\n",
+			"2 - Somar todos os elementos e exibir o resultado.\n ",
+			"3 - Somar todos os elementos da terceira linha e exibir o resultado.\n",
+			"4 - Somar os elementos na diagonal principal.\n",
+			"5 Somar todos os elementos de índice par da segunda linha.\n",
+			"Digite sua escolha\n"
+		)
 		
 		leia(facaSuaEscolha)
 			se(facaSuaEscolha == "1"){
@@ -58,9 +60,9 @@ programa
 			para(inteiro i = 0; i < quantidadeLinhas; i++){
 				se(i % 2 == 0){
 					somatorioParSegundaLinha = somatorioParSegundaLinha + matriz[1][i]
-				}	
-				escreva("A soma da diagonal principal é de: " + somatorioDiagonal)		
+				}			
 			}
+			escreva("A soma do par da segunda linha é de: " + somatorioParSegundaLinha)
 		}
 	}
 }
@@ -69,7 +71,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 71; 
+ * @POSICAO-CURSOR = 2077; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {matriz, 8, 10, 6}-{somatorioParSegundaLinha, 13, 10, 24};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
